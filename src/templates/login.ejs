@@ -1,0 +1,30 @@
+<%- include("../partials/header.ejs") %>
+
+    <body>
+
+
+        <form id="form" action="/login" method="POST" class="form">
+            <div class="formheading"><b>Login </b></div>
+            <div class="formheading2">stay tuned for listening more music</div>
+            <div class="formmain">
+                <div class="col">
+                    <input class="input" type="email" name="email" id="exampleFormControlInput1" placeholder="Enter Your Email Here">
+                </div>
+
+                <div class="col">
+                    <input class="input" type="password" name="password" placeholder="Password" aria-label="First name">
+                </div>
+
+
+            </div>
+            <input class="formbtn" type="submit" value="Log In">
+            <div class="formbottom">
+                <p>Don't Have An Account Please Signup</p>
+                <div class="formbtn2"><a href="/signup" class="linkh">Signup</a></div>
+            </div>
+        </form>
+
+
+    </body>
+
+    </html>

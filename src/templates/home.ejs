@@ -1,0 +1,86 @@
+<%- include("../partials/header.ejs") %>
+
+    <body>
+        <div class="main">
+            <%- include("../partials/navbar.ejs") %>
+                <div class="part2">
+                    <div class="homeheading" style="color: white;">
+                        <% if(user){ %>
+                                <div class="username"><%= user.email%></div>
+                                
+                                <div class="signup"><a href="/logout" class="linkh">logout</a></div>
+                            
+                        <% } else { %>
+                                <div class="signup"><a href="/signup" class="linkh">signup</a></div>
+                                <div class="signup"><a href="/login" class="linkh">login</a></div>
+                        <% } %>
+                    </div>
+                    <div class="homecards">
+                        <div class="card">
+                            <div><img src="../images/ki.webp" alt="" srcset=""></div>
+                            <div class="cardname"><a href="/kishore" class="nothingwant">Kishore Kumar</a></div>
+                        </div>
+                        <div class="card">
+                            <div><img src="../images/yoyo2.webp" alt="" srcset=""></div>
+                            <div class="cardname"><a href="/yoyo" class="nothingwant">Honey Singh</a></div>
+
+                        </div>
+                        <div class="card">
+                            <div><img src="../images/pritam.jpeg" alt="" srcset=""></div>
+                            <div class="cardname"><a href="/pritam" class="nothingwant">Pritam</a></div>
+
+                        </div>
+
+                    </div>
+
+                    <div class="homecards">
+                        <div class="card">
+                            <div><img src="../images/arijit.webp" alt="" srcset=""></div>
+                            <div class="cardname"><a href="/arijit" class="nothingwant">Arijit Singh</a></div>
+
+                        </div>
+                        <div class="card">
+                            <div><i class="fa-solid fa-heart"></i></div>
+                            <div class="cardname">Liked Songs</div>
+                        </div>
+
+
+                    </div>
+                </div>
+        </div>
+
+        <div class="bottom">
+            <div class="bottom1">
+                <div class="bottomsongname">
+                    You Have To Login For Listen
+                </div>
+                <div class="bottomicon">
+                    <i class="fa-regular fa-heart"></i>
+                </div>
+            </div>
+            <div class="bottom2">
+                <div>
+                    <ul class="icons">
+                        <li><i class="fa-solid fa-backward-step"></i></li>
+                        <li><i class="fa-solid fa-pause"></i></li>
+                        <li><i class="fa-solid fa-forward-step"></i></li>
+                    </ul>
+                </div>
+                <div class="icon">
+                    <li class="startingtime">01:00</li>
+                    <input type="range" class="range" value="0" min="0" max="100">
+                    <li class="endingtime">01:59</li>
+                </div>
+            </div>
+            <div class="bottom3">
+                <div class="bottom3icon">
+                    <i class="fa-solid fa-volume-high"></i>
+                </div>
+                <div class="bottom3range">
+                    <input class="bottom3range" type="range" value="100" min="0" max="100">
+                </div>
+            </div>
+        </div>
+    </body>
+
+    </html>
